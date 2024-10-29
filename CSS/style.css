@@ -1,0 +1,401 @@
+/* variable */
+:root {
+    --main-bg-color-white: white;
+    --main-bg-color-black: #000000;
+    --main-bg-color-gray: #dadada;
+    --main-bg-color-gray300: #bcbcbc;
+    --main-bg-color-gray700: #463939c6;
+}
+/* variable */
+
+body {
+    font-family: 'Roboto Mono', Helvetica, sans-serif;
+    background-color: var(--main-bg-color-gray);
+}
+
+.full-container {
+    width: 100%;
+    height: 32px;
+}
+
+.container {
+    width: 92%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--main-bg-color-white);
+}
+
+.title-header {
+    text-align: center;
+    padding-top: 65px;
+    width: 100%;
+    height: 150px;
+}
+
+.title-header h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: var(--main-bg-color-black);
+}
+
+.title-header p {
+    font-size: 0.9rem;
+}
+
+.image-header {
+    background-image: url('../image/jane.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding: 25px;
+}
+
+.image-header span:nth-child(1) {
+    font-size: 35px;
+    font-weight: bold;
+    color: var(--main-bg-color-white);
+    margin-bottom: 20px;
+}
+
+.image-header span:nth-child(2) {
+    font-size: 35px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--main-bg-color-white);
+    margin-bottom: 20px;
+}
+
+
+.btn-subscribe {
+    background-color: var(--main-bg-color-gray);
+    color: var(--main-bg-color-black);
+    padding: 15px;
+    font-size: 15px;
+    width: 10vh;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase; /* uppercase:Majuscule lowercase capilizer */
+    /* animation: button_subscribe 2s infinite; */  /* pour faire une animation en css avec animation lier au @keyframes */
+}
+
+.btn-subscribe:hover {
+    background-color: var(--main-bg-color-black);
+    color: var(--main-bg-color-white);
+}
+
+/* menu navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+/* menu navbar */
+
+/* content */
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin: 0 auto;
+    width: 92%;
+    border-left: 1px solid var(--main-bg-color-gray300);
+    border-right: 1px solid var(--main-bg-color-gray300);
+}
+
+.posts {
+    width: 63%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+
+.post {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--main-bg-color-white);
+}
+
+.post-header h1{
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-top: 15px;
+    width: 100%;
+}
+.post-header p{
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.post-image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: left;
+    padding: 5px;
+}
+.btn-container {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-bottom: 10px 
+    }
+    
+
+.btn-replies {
+    background-color: var(--main-bg-color-black);
+    color: var(--main-bg-color-white);
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-number {
+    background-color: var(--main-bg-color-white);
+    color: var(--main-bg-color-black);
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 3px;
+
+}
+
+/*.like-button {
+
+}*/
+.icon-like {
+    align-items: center;
+    background-color: var(--main-bg-color-white);
+    color: var(--main-bg-color-black);
+    padding: 8px 15px;
+    border-color: var(--main-bg-color-gray);
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar {
+    border: 1px solid;
+    width: 30%;
+    height: 300px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    box-sizing: border-box; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.sidebar-content {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centre le texte verticalement */
+    align-items: flex-start; /* Aligné à gauche */
+    padding: 10px;
+}
+.post-footer{
+    width: 100%;
+    height: 100%;
+    padding: 20px; /* Ajustez le padding selon vos préférences */
+    box-sizing: border-box; /* Pour inclure le padding dans la largeur totale */
+    line-height: 1.5;
+    background-color: var(--main-bg-color-black);
+    color: var(--main-bg-color-white);
+}
+
+.post-footer h1{
+    font-weight: bold;
+    font-size: 14px;
+}
+.post-footer p{
+    font-size: 12px;
+    margin: 0;
+}
+
+.sidebar1 {
+    border: 1px solid;
+    width: 30%;
+    height: 300px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    box-sizing: border-box; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;}
+
+.sidebar2 {
+        border: 1px solid;
+        width: 30%;
+        height: 300px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        box-sizing: border-box; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;}
+
+        .w3-ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0
+        }
+        
+        .w3-ul li {
+            padding: 8px 16px;
+            border-bottom: 1px solid #ddd
+        }        
+/* content  */
+
+
+.footer {
+    background-color: #666;
+    color: #fff;
+    padding: 30px;
+    position: relative;
+}
+
+
+
+/* Bouton "To the top" */
+.to-top-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.to-top-button a {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.to-top-button a:hover {
+    background-color: #333;
+}
+
+/* Style pour le texte dans le footer */
+.footer p {
+    font-size: 14px;
+}
+
+.footer a {
+    color: #ddd;
+}
+
+.footer a:hover {
+    color: #fff;
+}
+
+/*  style icon */
+.icon-bar-network {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    display: inline-block;
+    transition: all 1s;
+}
+.icon-bar {
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.icon-bar i {
+    margin-right: 8px;
+}
+
+.icon-bar:hover {
+    background-color: #333;
+}
+
+
+.icon-bar-network:hover {
+    background-color: var(--main-bg-color-gray300);
+}
+
+.network-social a {
+    text-decoration: none;
+}
+
+.icon-bar-network i {
+    color: var(--main-bg-color-white);
+}
+/* style icon */
+
+
+
+/* bloc color */
+.bg-black {background-color: var(--main-bg-color-black, black);}
+.bg-white {background-color: var(--main-bg-color-white, black);}
+.bg-gray {background-color: var(--main-bg-color-gray, black);}
+.bg-gray700 {background-color: var(--main-bg-color-gray700, black);}
+
+.text-black {color: var(--main-bg-color-black, black);}
+.text-white {color: var(--main-bg-color-white, black);}
+.text-gray {color: var(--main-bg-color-gray, black);}
+.text-gray700 {color: var(--main-bg-color-gray700, black);}
+/* bloc color */
+/* bloc margin m- padding p- */
+.m-1{margin: 1rem;}
+.m-2{margin: 2rem;}
+.m-3{margin: 3rem;}
+.m-4{margin: 4rem;}
+.m-5{margin: 5rem;}
+
+.mt-1{margin: 1rem;}
+.mt-2{margin: 2rem;}
+.mt-3{margin: 3rem;}
+.mt-4{margin: 4rem;}
+.mt-5{margin: 5rem;}
+
+.mb-1{margin: 1rem;}
+.mb-2{margin: 2rem;}
+.mb-3{margin: 3rem;}
+.mb-4{margin: 4rem;}
+.mb-5{margin: 5rem;}
+
+.p-1{padding: 0.5rem;}
+.p-2{padding: 1rem;}
+.p-3{padding: 2rem;}
+.p-4{padding: 3rem;}
+.p-5{padding: 4rem;}
+/* bloc margin padding */
+
+
+/* animation */
+@keyframes button_subscribe {
+    from {background-color: var(--main-bg-color-gray);}
+    to {background-color: var(--main-bg-color-black);}
+}
